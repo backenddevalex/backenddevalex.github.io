@@ -20,6 +20,7 @@
 		<!-- Подключаем наш файл со стилями, который находится в папке css-->
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+		<link rel="stylesheet" href="css/animate.css">
 </head>
 
 <body>
@@ -28,15 +29,15 @@
  	<div class="container">
  		<div class="row">
  			<div class="col-lg-7">
- 				<img class="header-img" src="img/image intensiv/main-image.png" alt="">
+ 				<img class="header-img wow bounceInDown" src="img/image intensiv/main-image.png" alt="">
  			</div>
  			<!-- /.col-7 -->
  			<div class="col-lg-5">
- 				<p class="header-pre-title">Веб-разработчик</p>
- 				<h1 class="header-title">Александр Кузнецов</h1>
- 				<p class="header-sub">Верстка на HTML/CSS <br>
+ 				<p class="header-pre-title wow bounceInUp" data-wow-delay=  "0.1s">Веб-разработчик</p>
+ 				<h1 class="header-title wow bounceInUp" data-wow-delay= "0.2s">Александр Кузнецов</h1>
+ 				<p class="header-sub wow bounceInUp" data-wow-delay= "0.3s">Верстка на HTML/CSS <br>
                 Разработка сайтов под ключ</p>
-                <div class="header-button-block">
+                <div class="header-button-block wow bounceInUp" data-wow-delay= "0.4 data-wow-delay= "0.3s"s">
                 <a href="https://vk.com/alex_kms" class="header-button">Связаться</a>
                 <small>*Это бесплатно</small>
                 </div>
@@ -51,7 +52,7 @@
 
  <section class="portfolio">
  	<div class="container">
- 		<div class="portfolio-block">
+ 		<div class="portfolio-block wow bounceIn">
  		<h2 class="portfolio-title">Портфолио</h2>
  		<p class="portfolio-subt">Мои работы</p>
  		<div class="row">
@@ -91,10 +92,10 @@
  			<div class="col-md-4">
  				<div class="social-blk">
  					<p>Подпишитесь:</p>
- 					<a href="https://www.facebook.com/profile.php?id=100007776997946"><img src="img/image intensiv/social buttons/facebook-logo-button.png" alt="Facebook"></a>
- 					<a href="#"><img src="img/image intensiv/social buttons/telegram-symbol.png" alt="Telegram"></a>
- 					<a href="https://vk.com/alex_kms"><img src="img/image intensiv/social buttons/vk-social-logotype.png" alt="Вконтакте"></a>
- 					<a href="https://www.youtube.com/channel/UCp7fddnJHxWDOhpEhn0MCOQ?view_as=subscriber"><img src="img/image intensiv/social buttons/youtube-symbol.png" alt="Youtube"></a>
+ 					<a class="wow bounceInDown" data-wow-delay= "0.1s" href="https://www.facebook.com/profile.php?id=100007776997946"><img src="img/image intensiv/social buttons/facebook-logo-button.png" alt="Facebook"></a>
+ 					<a class="wow bounceInDown" data-wow-delay= "0.2s" href="#"><img src="img/image intensiv/social buttons/telegram-symbol.png" alt="Telegram"></a>
+ 					<a class="wow bounceInDown" data-wow-delay= "0.3s" href="https://vk.com/alex_kms"><img src="img/image intensiv/social buttons/vk-social-logotype.png" alt="Вконтакте"></a>
+ 					<a class="wow bounceInDown" data-wow-delay= "0.4s" href="https://www.youtube.com/channel/UCp7fddnJHxWDOhpEhn0MCOQ?view_as=subscriber"><img src="img/image intensiv/social buttons/youtube-symbol.png" alt="Youtube"></a>
  				</div>
  			</div>
  			<!-- /.col-4 -->
@@ -109,5 +110,11 @@
  	</div>
  	<!-- /.container -->
 </footer>
+
+<script src="js/wow.min.js"></script>
+<script>
+	new WOW().init();
+</script>
+
 </body>
 </html>
